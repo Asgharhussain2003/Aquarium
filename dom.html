@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<script src="jqurey-js.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("#setID").text($("#getID").val())
+        });
+            $("#btn").click(function(){
+                $("#setName").text($("#getName").val())
+            });
+            $("#btn").click(function(){
+                $("#setClass").text($("#getClass").val())
+            });
+                $("#btn").click(function(){
+                $("#setAge").text($("#getClass").val())
+                });
+        });
+
+</script>
+<style>
+    #btn{
+        color: whitesmoke;
+        background-color: blue;
+        
+}
+</style>
+</head>
+<body>
+    <div class="mb-3">
+        <form action=""class="form form-control">
+
+            <input type="text" id="getID" placeholder="Enter your ID">
+            <input type="text" id="getName" placeholder="Enter your name">
+            <input type="text" id="getClass" placeholder="Enter your Class">
+            <input type="text" id="getAge" placeholder="Enter your Age">
+            <button id="btn" type="button">click</button>
+        </form>
+    </div>
+</body>
+        <table class="table table-border">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td id="setID"></td>
+                <td id="setName"></td>
+                <td id="setClass"></td>
+                <td id="setAge"></td>
+            </tbody>
+        </table>
+
+</html>
